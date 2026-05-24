@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="T Coded Plumbing provides premium plumbing installation, repair, emergency response, water heater, drain, sewer, bathroom, and kitchen plumbing services in Lagos, Nigeria.">
+    <meta name="theme-color" content="#07090A">
+    <title>T Coded Plumbing | Premium Plumbing Services</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+
+    <aside class="mob-nav" id="mobNav" aria-label="Mobile navigation">
+        <button class="mob-close" type="button" aria-label="Close menu">&times;</button>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#showcase">Demo</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Contact</a>
+    </aside>
+
+    <nav id="nav" aria-label="Primary navigation">
+        <a href="#hero" class="nav-logo" aria-label="T Coded Plumbing home"><span class="logo-dot"></span>T CODED PLUMBING</a>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#showcase">Live Demo</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="tel:+2348050833719" class="nav-cta">Call Now</a>
+        <button class="hamburger" type="button" aria-label="Open menu" aria-controls="mobNav" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-bg"></div>
+            <div class="hero-grid"></div>
+            <canvas id="particles" aria-hidden="true"></canvas>
+
+            <div class="hero-split">
+                <div class="hero-left">
+                    <div class="hero-eyebrow"><span class="line"></span>Premium Plumbing Service<span class="line"></span></div>
+                    <h1 class="hero-title"><span class="outline">Reliable Plumbing</span><br><span class="green">Neatly Done</span></h1>
+                    <div class="hero-divider"></div>
+                    <p class="hero-desc">Repairs, installations, and maintenance for homes and businesses. Clear pricing, careful workmanship, and a clean job site after every visit.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-primary">Get Free Quote</a>
+                        <a href="#services" class="btn-secondary">Our Services</a>
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <svg class="tap-scene" viewBox="0 0 280 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animated water tap">
+                        <defs>
+                            <linearGradient id="pipeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#0c1a0c"/>
+                                <stop offset="35%" stop-color="#1e3a1e"/>
+                                <stop offset="65%" stop-color="#254a25"/>
+                                <stop offset="100%" stop-color="#0c1a0c"/>
+                            </linearGradient>
+                            <linearGradient id="pipeGradV" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" stop-color="#1e3a1e"/>
+                                <stop offset="100%" stop-color="#0c1a0c"/>
+                            </linearGradient>
+                            <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#7ab800"/>
+                                <stop offset="50%" stop-color="#B6FF00"/>
+                                <stop offset="100%" stop-color="#7ab800"/>
+                            </linearGradient>
+                            <linearGradient id="waterGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#1a7aaa" stop-opacity="0.6"/>
+                                <stop offset="50%" stop-color="#29ABE2" stop-opacity="0.95"/>
+                                <stop offset="100%" stop-color="#1a7aaa" stop-opacity="0.6"/>
+                            </linearGradient>
+                            <filter id="greenGlow"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+                            <filter id="waterGlow"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+                        </defs>
+
+                        <rect x="28" y="370" width="120" height="22" rx="11" fill="url(#pipeGrad)" stroke="rgba(182,255,0,0.35)" stroke-width="1.5"/>
+                        <rect x="44" y="363" width="88" height="13" rx="6.5" fill="url(#accentGrad)" filter="url(#greenGlow)"/>
+                        <rect x="58" y="100" width="44" height="276" rx="22" fill="rgba(0,0,0,0.5)"/>
+                        <rect x="56" y="100" width="44" height="276" rx="22" fill="url(#pipeGrad)" stroke="rgba(182,255,0,0.2)" stroke-width="1"/>
+                        <rect x="63" y="104" width="22" height="268" rx="11" fill="#1e3a1e"/>
+                        <rect x="60" y="108" width="5" height="258" rx="2.5" fill="rgba(182,255,0,0.08)"/>
+                        <path d="M 60 120 Q 60 42 138 42 Q 216 42 216 120 L 216 240" fill="none" stroke="rgba(0,0,0,0.5)" stroke-width="46" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M 60 120 Q 60 42 138 42 Q 216 42 216 120 L 216 240" fill="none" stroke="url(#pipeGrad)" stroke-width="42" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M 60 120 Q 60 42 138 42 Q 216 42 216 120 L 216 240" fill="none" stroke="#1e3a1e" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M 60 120 Q 60 42 138 42 Q 216 42 216 120 L 216 240" fill="none" stroke="rgba(182,255,0,0.14)" stroke-width="42" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M 72 120 Q 72 56 138 56 Q 204 56 204 120 L 204 240" fill="none" stroke="rgba(182,255,0,0.06)" stroke-width="4" stroke-linecap="round"/>
+                        <rect x="198" y="238" width="36" height="14" rx="7" fill="url(#accentGrad)" filter="url(#greenGlow)"/>
+                        <circle cx="207" cy="245" r="2" fill="rgba(0,0,0,0.4)"/>
+                        <circle cx="216" cy="245" r="2" fill="rgba(0,0,0,0.4)"/>
+                        <circle cx="225" cy="245" r="2" fill="rgba(0,0,0,0.4)"/>
+                        <rect x="35" y="275" width="96" height="24" rx="12" fill="url(#pipeGrad)" stroke="rgba(182,255,0,0.25)" stroke-width="1"/>
+                        <rect x="48" y="280" width="70" height="14" rx="7" fill="#172a17"/>
+                        <circle cx="35" cy="287" r="14" fill="url(#accentGrad)" filter="url(#greenGlow)" class="tap-handle"/>
+                        <circle cx="35" cy="287" r="8" fill="url(#pipeGradV)"/>
+                        <circle cx="33" cy="285" r="3" fill="rgba(182,255,0,0.55)"/>
+                        <text x="35" y="292" text-anchor="middle" font-size="6" fill="rgba(182,255,0,0.8)" font-family="Space Grotesk">ON</text>
+                        <rect class="wstream" x="209" y="252" width="14" height="138" rx="7" fill="url(#waterGrad)" filter="url(#waterGlow)"/>
+                        <rect class="wstream2" x="205" y="252" width="22" height="105" rx="11" fill="#4FC3F7" opacity="0.28"/>
+                        <circle class="wdrop wd1" cx="216" cy="262" r="6.5" fill="#29ABE2" opacity="0.9"/>
+                        <circle class="wdrop wd2" cx="213" cy="262" r="5" fill="#4FC3F7" opacity="0.85"/>
+                        <circle class="wdrop wd3" cx="219" cy="262" r="5.5" fill="#29ABE2" opacity="0.9"/>
+                        <circle class="wdrop wd4" cx="214" cy="262" r="4.5" fill="#4FC3F7" opacity="0.8"/>
+                        <circle class="wdrop wd5" cx="218" cy="262" r="4" fill="#29ABE2" opacity="0.85"/>
+                        <ellipse class="wsplash" cx="216" cy="394" rx="28" ry="9" fill="#29ABE2" opacity="0.4"/>
+                        <circle class="sp0" cx="205" cy="390" r="3.5" fill="#4FC3F7" opacity="0.8"/>
+                        <circle class="sp1" cx="227" cy="390" r="3.5" fill="#4FC3F7" opacity="0.8"/>
+                        <circle class="sp2" cx="210" cy="383" r="2.5" fill="#29ABE2" opacity="0.8"/>
+                        <circle class="sp3" cx="222" cy="383" r="2.5" fill="#29ABE2" opacity="0.8"/>
+                        <circle cx="252" cy="290" r="3" fill="#29ABE2" opacity="0.35"/>
+                        <circle cx="244" cy="320" r="2" fill="#4FC3F7" opacity="0.25"/>
+                        <circle cx="258" cy="340" r="2.5" fill="#29ABE2" opacity="0.2"/>
+                        <text x="76" y="340" font-size="8.5" fill="rgba(182,255,0,0.5)" font-family="Space Grotesk" letter-spacing="2">PRECISION</text>
+                        <text x="76" y="354" font-size="8.5" fill="rgba(182,255,0,0.5)" font-family="Space Grotesk" letter-spacing="2">FLOW CONTROL</text>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="hero-scroll"><div class="scroll-line"></div>Scroll</div>
+        </section>
+
+        <section id="stats" class="stats-section" aria-label="Company statistics">
+            <div class="stats-grid">
+                <div class="stat-item reveal"><div class="stat-number"><span class="counter" data-target="500">0</span>+</div><div class="stat-label">Projects Completed</div></div>
+                <div class="stat-item reveal"><div class="stat-number"><span class="counter" data-target="15">0</span>+</div><div class="stat-label">Years Experience</div></div>
+                <div class="stat-item reveal"><div class="stat-number"><span class="counter" data-target="98">0</span>%</div><div class="stat-label">Client Satisfaction</div></div>
+                <div class="stat-item reveal"><div class="stat-number">24/7</div><div class="stat-label">Emergency Service</div></div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="srv-wrap">
+                <div class="sh">
+                    <div class="section-tag reveal">What We Do</div>
+                    <h2 class="section-title reveal">Plumbing Services</h2>
+                    <div class="section-bar c reveal"></div>
+                    <p class="section-desc reveal centered">Practical plumbing support for everyday problems, planned upgrades, and new installations.</p>
+                </div>
+                <div class="services-grid">
+                    <article class="service-card reveal"><div class="service-icon">PIPE</div><div class="service-num">01</div><h3>Pipe Installation &amp; Repair</h3><p>Clean pipework, careful routing, pressure checks, and durable fittings for residential and commercial properties.</p></article>
+                    <article class="service-card reveal"><div class="service-icon">BATH</div><div class="service-num">02</div><h3>Bathroom &amp; Kitchen Plumbing</h3><p>Fixture installation, leak correction, valve replacement, and complete wet-area plumbing upgrades.</p></article>
+                    <article class="service-card reveal"><div class="service-icon">24H</div><div class="service-num">03</div><h3>Emergency Plumbing</h3><p>Fast response for burst pipes, severe leaks, blocked drains, and urgent plumbing faults.</p></article>
+                    <article class="service-card reveal"><div class="service-icon">SITE</div><div class="service-num">04</div><h3>New Construction Plumbing</h3><p>Coordinated first-fix and second-fix plumbing for homes, apartments, and commercial builds.</p></article>
+                    <article class="service-card reveal"><div class="service-icon">HEAT</div><div class="service-num">05</div><h3>Water Heater Services</h3><p>Installation, maintenance, and repair for tank, tankless, solar, and heat pump water heater systems.</p></article>
+                    <article class="service-card reveal"><div class="service-icon">DRAIN</div><div class="service-num">06</div><h3>Drain &amp; Sewer Services</h3><p>Drain clearing, sewer inspection, hydro-jetting, and waste-line rehabilitation for reliable flow.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section id="showcase">
+            <div class="showcase-inner">
+                <div class="showcase-header">
+                    <div class="section-tag reveal">Installation Standards</div>
+                    <h2 class="section-title reveal">Built With Care</h2>
+                    <div class="section-bar c reveal"></div>
+                    <p class="section-desc reveal centered">A closer look at the systems we install, with a focus on clean fitting, reliable flow, and long-term maintenance.</p>
+                </div>
+
+                <div class="showcase-grid">
+                    <article class="showcase-card reveal-l">
+                        <div class="sc-label">Fixture Work</div>
+                        <h3 class="sc-title">Precision Flow Control</h3>
+                        <figure class="fixture-media tap-media">
+                            <video class="fixture-video" muted autoplay loop playsinline preload="metadata" poster="https://assets.mixkit.co/videos/3891/3891-thumb-720-0.jpg">
+                                <source src="https://assets.mixkit.co/videos/3891/3891-1080.mp4" type="video/mp4">
+                            </video>
+                            <span class="fixture-test-readout">Flow stable</span>
+                            <figcaption class="fixture-caption">Wall-mounted mixer tap with concealed supply lines</figcaption>
+                        </figure>
+                        <div class="fixture-test-wrap">
+                            <button class="fixture-test-cta tap-cta idle-pulse" type="button">Test Tap Flow</button>
+                            <div class="fixture-test-status" id="tapStatus">Mixer system ready</div>
+                        </div>
+                        <p class="sc-desc">We install advanced mixer taps with clean wall feeds, pressure-balanced control, neat sealing, and serviceable fittings that hold up in daily use.</p>
+                    </article>
+
+                    <article class="showcase-card reveal-r">
+                        <div class="sc-label">Sanitary Work</div>
+                        <h3 class="sc-title">Complete Sanitary Systems</h3>
+                        <figure class="fixture-media wc-media">
+                            <video class="fixture-video" muted autoplay loop playsinline preload="metadata" poster="https://assets.mixkit.co/videos/20236/20236-thumb-720-0.jpg">
+                                <source src="https://assets.mixkit.co/videos/20236/20236-720.mp4" type="video/mp4">
+                            </video>
+                            <span class="fixture-test-readout">Plate responsive</span>
+                            <figcaption class="fixture-caption">Wall-hung WC flush performance check</figcaption>
+                        </figure>
+                        <div class="fixture-test-wrap">
+                            <button class="fixture-test-cta flush-cta idle-pulse" type="button">Test WC Flush</button>
+                            <div class="fixture-test-status" id="flushStatus">Concealed system ready</div>
+                        </div>
+                        <p class="sc-desc">Our WC work covers wall-hung pans, concealed cistern frames, dual-flush plates, waste alignment, load support, and seals that are easy to access for service.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="about-inner">
+                <div class="about-media reveal-l">
+                    <div class="about-img">
+                        <span class="frame-icon">TC</span>
+                        <div class="img-glow"></div>
+                    </div>
+                    <div class="about-badge"><div class="yrs">15</div><div class="yrs-lbl">Years of<br>Excellence</div></div>
+                </div>
+                <div class="reveal-r">
+                    <div class="section-tag">Our Story</div>
+                    <h2 class="section-title">About T Coded</h2>
+                    <div class="section-bar"></div>
+                    <p class="section-desc">T Coded Plumbing Service helps homeowners, landlords, and businesses solve plumbing issues without stress or guesswork.</p>
+                    <p class="section-desc mt-18">We focus on neat installation, honest advice, and repairs that hold up after the technician leaves.</p>
+                    <div class="about-feats">
+                        <div class="about-feat"><div class="feat-dot"></div>Clear quote before work starts</div>
+                        <div class="about-feat"><div class="feat-dot"></div>Careful repairs and tidy finishing</div>
+                        <div class="about-feat"><div class="feat-dot"></div>Suitable materials for local water conditions</div>
+                        <div class="about-feat"><div class="feat-dot"></div>Emergency support when problems cannot wait</div>
+                        <div class="about-feat"><div class="feat-dot"></div>Maintenance advice after completion</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-us">
+            <div class="why-wrap">
+                <div class="section-heading">
+                    <div class="section-tag reveal">The T Coded Difference</div>
+                    <h2 class="section-title reveal">Why Choose Us</h2>
+                    <div class="section-bar c reveal"></div>
+                </div>
+                <div class="why-grid">
+                    <article class="why-item reveal"><div class="why-icon">01</div><div><h3>Fast Response</h3><p>Urgent calls are handled quickly, with clear arrival times and practical first advice.</p></div></article>
+                    <article class="why-item reveal"><div class="why-icon">02</div><div><h3>Documented Quality</h3><p>Every job is pressure-tested, checked, and handed over with a clean finish.</p></div></article>
+                    <article class="why-item reveal"><div class="why-icon">03</div><div><h3>Reliable Materials</h3><p>We use trusted pipes, fittings, valves, and fixtures suited to local water conditions.</p></div></article>
+                    <article class="why-item reveal"><div class="why-icon">04</div><div><h3>Protected Work</h3><p>Your property is handled carefully, with neat work areas and responsible workmanship.</p></div></article>
+                    <article class="why-item reveal"><div class="why-icon">05</div><div><h3>Clear Pricing</h3><p>You receive a clear scope and quote before work begins, with no surprise charges.</p></div></article>
+                    <article class="why-item reveal"><div class="why-icon">06</div><div><h3>Water-Smart Options</h3><p>We recommend efficient fixtures and repairs that reduce waste and long-term cost.</p></div></article>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="test-inner">
+                <div class="sh">
+                    <div class="section-tag reveal">Client Reviews</div>
+                    <h2 class="section-title reveal">What Our Clients Say</h2>
+                    <div class="section-bar c reveal"></div>
+                </div>
+                <div class="testimonial-slider reveal">
+                    <div class="testimonial-track" id="track">
+                        <article class="testimonial-card"><div class="test-quote">"</div><div class="test-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="test-text">"T Coded transformed our entire bathroom system in two days. The craftsmanship is impeccable and the team genuinely cares about quality."</p><div class="test-author">Adaeze Okonkwo</div><div class="test-role">Homeowner, Lagos</div></article>
+                        <article class="testimonial-card"><div class="test-quote">"</div><div class="test-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="test-text">"Called for a burst pipe emergency. They arrived fast, fixed everything properly, and left the space clean. Brilliant service."</p><div class="test-author">Emeka Osei</div><div class="test-role">Property Developer</div></article>
+                        <article class="testimonial-card"><div class="test-quote">"</div><div class="test-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="test-text">"We use T Coded across our commercial properties. They always deliver on time and on budget without compromising quality."</p><div class="test-author">Chidinma Eze</div><div class="test-role">Commercial Property Manager</div></article>
+                    </div>
+                </div>
+                <div class="slider-controls" aria-label="Testimonial controls">
+                    <button class="slider-btn" type="button" data-slider="prev" aria-label="Previous testimonial">&#8592;</button>
+                    <div class="slider-dots" id="dots">
+                        <button class="dot active" type="button" data-slide="0" aria-label="Show testimonial 1"></button>
+                        <button class="dot" type="button" data-slide="1" aria-label="Show testimonial 2"></button>
+                        <button class="dot" type="button" data-slide="2" aria-label="Show testimonial 3"></button>
+                    </div>
+                    <button class="slider-btn" type="button" data-slider="next" aria-label="Next testimonial">&#8594;</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="qr">
+            <div class="qr-wrap">
+                <div class="section-tag reveal">Share Our Website</div>
+                <h2 class="section-title reveal">Scan &amp; Connect</h2>
+                <div class="section-bar c reveal"></div>
+                <p class="section-desc reveal centered">Print this QR code on business cards, flyers, or signage so customers can reach you instantly.</p>
+                <div class="qr-container">
+                    <div class="reveal">
+                        <div class="qr-box"><div class="qr-code-wrap"><div id="qrcode"></div></div><div class="qr-lbl">Scan to visit our website</div></div>
+                        <button class="qr-dl" type="button" id="downloadQr">&#8681; Download QR Code</button>
+                    </div>
+                    <div class="qr-info reveal-r">
+                        <h3>Your Website,<br>One Scan Away</h3>
+                        <p>Share your website instantly with anyone. Print on business cards, vehicle wraps, flyers, and signage.</p>
+                        <p>Enter your live URL to update the code:</p>
+                        <div class="qr-url-input">
+                            <input type="url" id="urlInput" placeholder="https://yourwebsite.com" value="https://tcodedplumbing.com">
+                            <button type="button" id="updateQr">Update</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact-inner">
+                <div class="reveal-l">
+                    <div class="section-tag">Get In Touch</div>
+                    <h2 class="contact-h">Let's Fix It<br><span>Together</span></h2>
+                    <p class="contact-p">Tell us what is happening and we will respond with the next best step, timing, and an estimate where possible.</p>
+                    <div class="contact-items">
+                        <div class="contact-item"><div class="ci-icon">PH</div><div class="ci-text"><strong>Phone</strong><span>+2348050833719</span></div></div>
+                        <div class="contact-item"><div class="ci-icon">EM</div><div class="ci-text"><strong>Email</strong><span>tcodedplumbingservices@gmail.com</span></div></div>
+                        <div class="contact-item"><div class="ci-icon">LG</div><div class="ci-text"><strong>Location</strong><span>Available Nationwide</span></div></div>
+                        <div class="contact-item"><div class="ci-icon">HR</div><div class="ci-text"><strong>Hours</strong><span>Mon-Sat 7am-8pm | Emergency 24/7</span></div></div>
+                    </div>
+                </div>
+
+                <div class="reveal-r">
+                    <form class="contact-form"  action="https://formspree.io/f/xaqkbrpv" method="POST">
+                        <div class="fg"><label for="fname">Your Name</label><input type="text" id="fname" name="name" placeholder="Full Name" required></div>
+                        <div class="fg"><label for="fphone">Phone Number</label><input type="tel" id="fphone" name="phone" placeholder="+234 800 000 0000" required></div>
+                        <div class="fg"><label for="femail">Email Address</label><input type="email" id="femail" name="email" placeholder="your@email.com" required></div>
+                        <div class="fg"><label for="fservice">Service Required</label><select id="fservice" name="service"><option value="">Select a service...</option><option>Pipe Installation &amp; Repair</option><option>Bathroom &amp; Kitchen Plumbing</option><option>Emergency Plumbing</option><option>New Construction Plumbing</option><option>Water Heater Services</option><option>Drain &amp; Sewer Services</option><option>Other</option></select></div>
+                        <div class="fg"><label for="fmessage">Message</label><textarea id="fmessage" name="message" rows="4" placeholder="Describe your plumbing needs..."></textarea></div>
+                        <button class="btn-primary" type="submit">Request Free Quote</button>
+                        <div class="form-ok" id="formOk">&#10004; Thank you. We'll contact you within 1 hour.</div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-top">
+            <div><div class="f-logo"><span>T CODED</span> PLUMBING</div><div class="f-tag">Reliable plumbing work in Lagos.</div></div>
+                <ul class="f-links">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#showcase">Demo</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-bot">
+                <div class="f-copy">&copy; <span id="year"></span> T Coded Plumbing Service. All rights reserved.</div>
+                <div class="f-socials"><a href="#" class="social-btn">f</a><a href="#" class="social-btn">in</a><a href="#" class="social-btn">ig</a><a href="#" class="social-btn">tw</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+</body>
+</html>
